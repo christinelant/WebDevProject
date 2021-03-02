@@ -1,0 +1,132 @@
+@import url(https://fonts.googleapis.com/css?family=Ramaraja, https://fonts.googleapis.com/css?family=Roboto+Slab);
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Roboto Slab;
+}
+
+nav {
+    border-bottom: 4px solid black;    
+    position: relative;
+    padding: 10px 30px;
+}
+
+a {
+    text-decoration: none;
+    color: initial;
+}
+
+.header-text {
+    text-align: center;
+    font-family: Ramaraja;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.content-container {
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+
+.nav-links-container{
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav-links-container a {
+    margin-right: 10px;
+}
+
+.header {
+    font-family: Ramaraja;
+    font-style: normal;
+    font-size: 50px;
+    line-height: 50px;
+    text-align: center;
+    display:block;
+    margin-bottom: -20px;
+}
+
+.mission-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.mission-container {
+    font-family: Ramaraja;
+    text-align: center;
+    font-weight: normal;
+    margin: 10px;
+}
+
+
+.mission-container .mission-text {
+    font-family: Roboto Slab;
+    background: rgba(233, 196, 106, 0.2);
+    padding: 37px 24px;
+}
+
+.mission-text p:first-of-type {
+    margin-bottom: 10px;
+}
+
+p span {
+    color: red;
+}
+
+.founders-wrapper {
+    margin: 45px 0;
+}
+
+.founders-wrapper h3 {
+    margin-bottom: 10px;
+    text-align:center;
+}
+
+.founders-container{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+.founder {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 300px;
+}
+
+.founder p {
+    height: 100px;
+    overflow: auto;
+    margin-top: 10px;
+}
+
+.founder img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.social-container img {
+    height: 20px;
+    margin: 0px 5px;
+}
+
+.social-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

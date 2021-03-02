@@ -1,0 +1,281 @@
+@import url(https://fonts.googleapis.com/css?family=Ramaraja, https://fonts.googleapis.com/css?family=Roboto+Slab, https://fonts.googleapis.com/css?family=Ramabhadra);
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Roboto Slab;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-bottom: 4px solid black;    
+    position: relative;
+    padding: 10px 30px;
+    background: white;
+}
+
+.content-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: initial;
+}
+
+.nav-links-container{
+    font-size: 15px;
+    align-self: flex-end;
+}
+
+.nav-links-container-right{
+    justify-content: flex-end;
+    display: flex;
+}
+
+.nav-links-container a {
+    margin-right: 10px;
+}
+
+.nav-links-container-right a {
+    background: #F34F2F;
+    color: white;
+    padding: 7px;
+    font-weight:lighter;
+}
+
+.header {
+    font-family: Ramaraja;
+    font-style: normal;
+    font-size: 50px;
+    line-height: 50px;
+    text-align: center;
+    display:block;
+    margin-bottom: -20px;
+}
+
+/* 59 = nav bar height */
+.carousel-wrapper {
+    /* height: calc(100vh - 59px); */
+    height: 800px;
+    position: relative;
+    /* padding: 0 100px; */
+    margin-top: 100px;
+}
+
+.carousel-container{
+    height: calc(70% - 60px);
+    width: 80%;
+    margin: 0 auto;
+}
+
+.carousel-container div {
+    height: 100%; 
+}
+
+.carousel-container img {
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-wrapper .arrow {
+    position: absolute;
+    top:32%;
+    transform:translateY(-50%);
+    background: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.carousel-wrapper .arrow:hover{
+    background:lightgray;
+}
+
+.carousel-wrapper .next {
+    right:100px;
+}
+
+.carousel-wrapper .prev {
+    left:100px;
+}
+
+
+.learn-btn {
+    position:absolute;
+    text-align: center;
+    border: 0px;
+    height: 60px;
+    width: 125px;
+    border-radius: 50%;
+    background: white;
+    font-family: Ramaraja;
+    font-size: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+.spoil-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.spoil-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 70px;
+    max-width: 350px;
+    background: rgba(216, 226, 220, 0.5);
+    position: relative;
+}
+
+.spoil-wrapper::before {
+    content: '';
+    height: 2300px;
+    top: -2300px;
+    width: 5px;
+    background-color: #ddbea9;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.spoil-container h3{
+    font-family: Ramabhadra;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.spoil-container p {
+    font-size: 18px;
+}
+
+.spoil-container p:first-of-type {
+    font-family: Roboto Slab;
+    margin-bottom: 7px;
+}
+
+.explanation-container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
+    margin-top: 138px;
+}
+
+.explanation-container h3 {
+    font-family: Ramabhadra;
+    font-size: 25px;
+    width: 400px;
+    padding: 10px;
+    margin-bottom: 30px;
+    background: #D4E09B;
+    border-radius: 19px;
+}
+
+.explanation-container p {
+    font-size: 18px;
+    margin: 10px;
+}
+
+.explanation-container p:first-of-type{
+    margin-bottom: 15px;
+}
+
+.explanation-container p:last-of-type{
+    margin-top: 20px;
+}
+
+span {
+    color: red;
+}
+
+.recipe-plan-container {
+    text-align: center;
+    margin-top: 138px;
+}
+
+.recipe-plan-container h3 {
+    font-size: 25px;
+    margin-bottom: 20px
+}
+
+.recipes-container {
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: center;
+}
+
+.recipe {
+    margin: 20px;
+    padding: 40px 50px;
+    position: relative;
+}
+
+.recipe:hover .background {
+    height: 100%;
+}
+
+.recipe-plan-container img {
+    height: 100px;
+    position: relative;
+}
+
+.recipe p {
+    position: relative;
+}
+
+.background {
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: height .2s ease-out;
+}
+
+#chicken .background {
+    background: rgba(252, 239, 180, 0.7);
+}
+
+#salmon .background {
+    background: rgba(255, 181, 167, 0.7);
+    top: unset;
+    bottom: 0;
+}
+
+#duck .background {
+    background: rgba(232, 232, 228, 0.7);
+}
+
+.submit-btn{
+    display: flex;
+    justify-content: center;
+    position: aboslute;
+    font-family: Ramaraja;
+    border: 0;
+    padding: 5px 20px 0px 20px;
+    background-color: #4682B4;;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    font-size: 25px;
+    color: white;
+    font-weight: lighter;
+}

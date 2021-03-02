@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>success!</title>
+
+    <link rel='stylesheet' href="./success-page-stylesheet.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Ramaraja'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto+Slab'>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-links-container">
+            <a href="./aboutUs.html" id='about_us_link' class='nav-link'>about us</a>
+            <a href="./ingredients.html" id='ingredients_link' class='nav-link'>ingredients</a>
+        </div>
+        <a href="./homepage.html" id='company_header' class='header'>catfood</a>
+    </nav>
+
+    <div class='content-container'>
+        <div class='success'>
+            <h3>success! get <span></span> ready for some good munchies</h3>
+        </div>
+        <div class='home-btn'>
+            <a href='./homepage.html'><button>home</button></a>
+        </div>
+        <div class='img-succ'>
+            <img src='./images/cat-pic-success.jpg'>
+        </div>
+    </div>
+</body>
+<script>
+    const petNameEl = document.querySelector('span')
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const petName = urlParams.get('petname');
+
+    if (petName) petNameEl.innerHTML = petName
+</script>
+
+</html>
